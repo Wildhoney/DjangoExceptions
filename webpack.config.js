@@ -1,21 +1,26 @@
 const webpack = require('webpack');
 
 module.exports = {
-    entry: './src/main.js',
+    entry: './src/Main.js',
     output: {
+        path: `${__dirname}/dist`,
         filename: '[name].js',
-        libraryTarget: 'var'
+        libraryTarget: 'commonjs2'
     },
     module: {
         loaders: [
             {
+                test: /\.js$/,
+                loader: 'babel-loader',
+                exclude: /node_modules/i
+            },
+            {
                 test: /\.purs$/,
                 loader: 'purs-loader',
                 exclude: /node_modules/,
-                bundleNamespace: 'DjangoExceptions',
                 query: {
-                    psc: 'psa',
-                    src: ['bower_components/purescript-*/src/**/*.purs', 'src/**/*.purs']
+                    src: ['bower_components/purescript-*/src/**/*.purs', 'src/**/*.purs'],
+                    bundleNamespace: 'DjangoExceptions'
                 }
             }
         ]
