@@ -1,6 +1,6 @@
 module Exceptions (parse) where
 
-import Prelude
+import Data.String (toUpper)
 
-parse ∷ ∀ t a. Category a => a t t
-parse = id
+parse ∷ String -> String
+parse x = toUpper x
