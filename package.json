@@ -6,7 +6,8 @@
   "scripts": {
     "test": "npm run build && ava",
     "build": "webpack",
-    "postinstall": "bower i"
+    "postinstall": "bower i",
+    "clean": "rimraf node_modules & rimraf bower_components & wait"
   },
   "repository": {
     "type": "git",
