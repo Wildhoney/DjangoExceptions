@@ -4,7 +4,9 @@
   "description": "Handle and parse Django REST Framework validation messages with aplomb. ",
   "main": "dist/exceptions.js",
   "scripts": {
-    "test": "ava"
+    "test": "npm run build && ava",
+    "build": "webpack",
+    "postinstall": "bower i"
   },
   "repository": {
     "type": "git",
@@ -28,8 +30,23 @@
   },
   "homepage": "https://github.com/Wildhoney/DjangoExceptions#readme",
   "devDependencies": {
+    "ava": "~0.18.2",
+    "babel-loader": "~7.0.0",
+    "babel-preset-es2015": "~6.24.1",
+    "babel-preset-es2016": "~6.24.1",
+    "babel-preset-es2017": "~6.24.1",
+    "babel-preset-stage-0": "~6.24.1",
     "bower": "~1.8.0",
     "purs-loader": "~3.0.0",
     "webpack": "~2.6.1"
+  },
+  "ava": {
+    "files": [
+      "tests/*.test.js"
+    ],
+    "babel": "inherit",
+    "require": [
+      "babel-register"
+    ]
   }
 }
