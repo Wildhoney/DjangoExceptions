@@ -28,6 +28,7 @@
   },
   "homepage": "https://github.com/Wildhoney/DjangoExceptions#readme",
   "devDependencies": {
+    "bower": "~1.8.0",
     "purs-loader": "~3.0.0",
     "webpack": "~2.6.1"
   }
