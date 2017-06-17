@@ -26,5 +26,9 @@
   "bugs": {
     "url": "https://github.com/Wildhoney/DjangoExceptions/issues"
   },
-  "homepage": "https://github.com/Wildhoney/DjangoExceptions#readme"
+  "homepage": "https://github.com/Wildhoney/DjangoExceptions#readme",
+  "devDependencies": {
+    "purs-loader": "~3.0.0",
+    "webpack": "~2.6.1"
+  }
 }
