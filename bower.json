@@ -27,5 +27,9 @@
   ],
   "dependencies": {
     "purescript-psci-support": "^3.0.0"
+  },
+  "devDependencies": {
+    "purescript-prelude": "^3.0.0",
+    "purescript-psci-support": "^3.0.0"
   }
 }
