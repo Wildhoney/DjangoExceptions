@@ -30,6 +30,7 @@
   },
   "devDependencies": {
     "purescript-prelude": "^3.0.0",
-    "purescript-psci-support": "^3.0.0"
+    "purescript-psci-support": "^3.0.0",
+    "purescript-strings": "^3.2.1"
   }
 }
