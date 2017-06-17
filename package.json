@@ -7,7 +7,7 @@
     "test": "npm run build && ava",
     "build": "webpack",
     "postinstall": "bower i",
-    "clean": "rimraf node_modules & rimraf bower_components & wait"
+    "clean": "rm -rf node_modules & rm -rf bower_components & wait"
   },
   "repository": {
     "type": "git",
