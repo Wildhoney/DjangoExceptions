@@ -1,0 +1,31 @@
+{
+  "name": "django-exceptions",
+  "description": "Handle and parse Django REST Framework validation messages with aplomb.",
+  "main": "dist/exceptions.js",
+  "authors": [
+    "Adam Timberlake <adam.timberlake@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "django",
+    "rest",
+    "framework",
+    "exceptions",
+    "messages",
+    "validations",
+    "parse",
+    "handle",
+    "graceful"
+  ],
+  "homepage": "https://github.com/Wildhoney/DjangoExceptions",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "purescript-psci-support": "^3.0.0"
+  }
+}
