@@ -1,0 +1,11 @@
+# os
+.DS_Store
+
+# ide
+.idea
+
+# npm/bower
+node_modules
+bower_components
+npm-debug.log
+yarn.lock
