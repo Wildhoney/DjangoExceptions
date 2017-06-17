@@ -1,1 +1,1 @@
-export { parse } from './purs/Exceptions.purs';
+export * from './purs/Exceptions.purs';

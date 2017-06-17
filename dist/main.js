@@ -2361,11 +2361,14 @@ Object.defineProperty(exports, "__esModule", {
 
 var _Exceptions = __webpack_require__(27);
 
-Object.defineProperty(exports, 'parse', {
-  enumerable: true,
-  get: function get() {
-    return _Exceptions.parse;
-  }
+Object.keys(_Exceptions).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function get() {
+      return _Exceptions[key];
+    }
+  });
 });
 
 /***/ }),
