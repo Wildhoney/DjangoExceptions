@@ -13,3 +13,5 @@ yarn.lock
 # ps
 output
 .psc-ide-port
+.psci_modules
+
