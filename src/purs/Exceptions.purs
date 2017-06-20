@@ -9,16 +9,16 @@ import Data.StrMap as SM
 newtype Field = Field { field :: Array String, messages :: Array String }
 data Lookup = ArrayLookup (Array String) | StrMapLookup (SM.StrMap (Array String)) | Empty
 
-read ∷ Array String → SM.StrMap (Array String) → Field
-read field model = case messages of
-    ArrayLookup xs  → Field { field: field, messages: xs }
-    StrMapLookup xs → read field xs
-    Empty           → Field { field: [], messages: [] }
+read ∷ SM.StrMap (Array String) → Array String → Array Field
+read m f = case messages of
+    ArrayLookup xs  → [Field { field: f, messages: xs }]
+    StrMapLookup xs → parse xs f
+    Empty           → [Field { field: ["None"], messages: [] }]
     where
-        wrap a = if F.isArray <<< F.toForeign $ a then ArrayLookup a else StrMapLookup a
-        messages = case A.head field of
-            M.Just x  → M.maybe Empty wrap $ SM.lookup x model
+        wrap a = if F.isArray <<< F.toForeign $ a then ArrayLookup a else StrMapLookup $ SM.singleton "firstName" ["..."]
+        messages = case A.last f of
+            M.Just x  → M.maybe Empty wrap $ SM.lookup x m
             M.Nothing → Empty
 
-parse ∷ SM.StrMap (Array String) → Array Field
-parse model = map (\field → read [field] model) $ SM.keys model
+parse ∷ SM.StrMap (Array String) → Array String → Array Field
+parse m f = A.concatMap (\field → read m (f <> [field])) $ SM.keys m

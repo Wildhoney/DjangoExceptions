@@ -8,12 +8,10 @@ test('It should be able to parse a simple non-nested validation structure;', t =
         'email': ['Must be at least 32 characters.', 'Must be a valid e-mail address.']
     };
 
-    // t.deepEqual(parse(messages), [
-    //     { field: ['name'], messages: ['Must be at least 16 characters.' ]},
-    //     { field: ['email'], messages: ['Must be at least 32 characters.', 'Must be a valid e-mail address.' ]}
-    // ]);
-    
-    console.log(parse(messages));
+    t.deepEqual(parse(messages)([]), [
+        { field: ['name'], messages: ['Must be at least 16 characters.' ]},
+        { field: ['email'], messages: ['Must be at least 32 characters.', 'Must be a valid e-mail address.' ]}
+    ]);
 
 });
 
@@ -31,7 +29,7 @@ test('It should be able to parse a semi-complex nested validation structure;', t
     //     { field: ['person', 'email'], messages: ['Must be at least 32 characters.', 'Must be a valid e-mail address.' ]}
     // ]);
 
-    console.log(parse(messages));
+    console.log(parse(messages)([]));
 
     // t.deepEqual(parse(messages), [
     //     { field: ['name'], messages: ['Must be at least 16 characters.' ]},
