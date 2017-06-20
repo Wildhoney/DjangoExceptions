@@ -33,6 +33,7 @@
     "purescript-psci-support": "^3.0.0",
     "purescript-strings": "^3.2.1",
     "purescript-maps": "^3.3.1",
-    "purescript-maybe": "^3.0.0"
+    "purescript-maybe": "^3.0.0",
+    "purescript-foreign": "^4.0.1"
   }
 }
