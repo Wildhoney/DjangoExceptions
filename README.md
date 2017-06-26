@@ -15,7 +15,7 @@
 Django Exceptions will attempt to flatten the validation messages into a single hierarchy, as otherwise the validation messages are infinitely nested, which makes it troublesome to render to HTML. Thus you are guanrateed to have a single array of all validation messages, with a `field` and `messages` key &ndash; both of which themselves are arrays.
 
 ```javascript
-import { parse } from 'django-exceptions';
+import parse from 'django-exceptions';
 
 const data = await fromApi();
 
@@ -28,7 +28,7 @@ parse(data).forEach(x => {
 In [React](https://github.com/facebook/react) you *might* do something like the following to render the messages:
 
 ```javascript
-import { parse } from 'django-exceptions';
+import parse from 'django-exceptions';
 
 render() {
     

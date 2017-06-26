@@ -1,5 +1,5 @@
 import test from 'ava';
-import { parse } from '../src/DjangoExceptions';
+import parse from '../src/DjangoExceptions';
 
 test('It should be able to parse a simple non-nested validation structure;', t => {
 

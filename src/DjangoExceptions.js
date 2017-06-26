@@ -18,3 +18,5 @@ export const parse = (input, group = []) => {
     }, []);
 
 };
+
+export default parse;
