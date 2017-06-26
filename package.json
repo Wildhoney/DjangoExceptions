@@ -4,10 +4,9 @@
   "description": "Handle and parse Django REST Framework validation messages with aplomb. ",
   "main": "dist/exceptions.js",
   "scripts": {
-    "test": "npm run build && clear && printf \"\n\" && figlet -f \"Kban\" \"Tests!\" && ava",
+    "test": "ava",
     "build": "webpack",
-    "postinstall": "bower i",
-    "clean": "rm -rf node_modules & rm -rf bower_components & wait"
+    "clean": "rm -rf node_modules"
   },
   "repository": {
     "type": "git",
@@ -37,8 +36,8 @@
     "babel-preset-es2016": "~6.24.1",
     "babel-preset-es2017": "~6.24.1",
     "babel-preset-stage-0": "~6.24.1",
-    "figlet-cli": "~0.1.0",
-    "purs-loader": "~3.0.0",
+    "babel-preset-stage-3": "~6.24.1",
+    "moggy": "~0.1.1",
     "webpack": "~2.6.1"
   },
   "ava": {
