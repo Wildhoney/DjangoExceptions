@@ -4,7 +4,7 @@
   "description": "Handle and parse Django REST Framework validation messages with aplomb. ",
   "main": "dist/django-exceptions.js",
   "scripts": {
-    "test": "ava",
+    "test": "nyc ava",
     "build": "webpack",
     "clean": "rm -rf node_modules"
   },
@@ -37,6 +37,8 @@
     "babel-preset-es2017": "~6.24.1",
     "babel-preset-stage-0": "~6.24.1",
     "babel-preset-stage-3": "~6.24.1",
+    "coveralls": "~2.13.1",
+    "nyc": "~11.0.2",
     "webpack": "~2.6.1"
   },
   "ava": {

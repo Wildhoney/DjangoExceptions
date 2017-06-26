@@ -8,6 +8,8 @@
 &nbsp;
 ![npm](http://img.shields.io/npm/v/django-exceptions.svg?style=flat-square)
 &nbsp;
+![Coveralls](https://img.shields.io/coveralls/Wildhoney/DjangoExceptions.svg?style=flat-square)
+&nbsp;
 ![License MIT](http://img.shields.io/badge/license-mit-lightgrey.svg?style=flat-square)
 
 # Getting Started
