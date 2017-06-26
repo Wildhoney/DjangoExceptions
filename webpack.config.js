@@ -1,10 +1,10 @@
 const webpack = require('webpack');
 
 module.exports = {
-    entry: './src/Main.js',
+    entry: './src/DjangoExceptions.js',
     output: {
         path: `${__dirname}/dist`,
-        filename: '[name].js',
+        filename: 'django-exceptions.js',
         libraryTarget: 'commonjs2'
     },
     module: {
