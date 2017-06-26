@@ -37,7 +37,6 @@
     "babel-preset-es2016": "~6.24.1",
     "babel-preset-es2017": "~6.24.1",
     "babel-preset-stage-0": "~6.24.1",
-    "bower": "~1.8.0",
     "figlet-cli": "~0.1.0",
     "purs-loader": "~3.0.0",
     "webpack": "~2.6.1"
