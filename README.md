@@ -2,7 +2,7 @@
 
 > Handle and parse [Django REST Framework validation messages](https://docs.djangoproject.com/en/1.11/ref/forms/validation/) with aplomb.
 
-**npm:** `npm i django-exceptions --save`
+`npm i django-exceptions --save`
 
 # Getting Started
 
