@@ -1,5 +1,3 @@
-import m from 'moggy';
-
 /**
  * @method parse
  * @param {Object} input
