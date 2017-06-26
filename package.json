@@ -1,6 +1,6 @@
 {
   "name": "django-exceptions",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Handle and parse Django REST Framework validation messages with aplomb. ",
   "main": "dist/django-exceptions.js",
   "scripts": {
