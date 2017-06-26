@@ -1,4 +1,4 @@
-<img alt="Django Exceptions" src="media/django-rest-framework.png" width="150" />
+<img alt="Django Exceptions" src="media/django-rest-framework.png" width="350" />
 
 > Handle and parse [Django REST Framework validation messages](https://docs.djangoproject.com/en/1.11/ref/forms/validation/) with aplomb. 
 
