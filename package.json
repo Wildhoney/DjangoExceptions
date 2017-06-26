@@ -37,7 +37,6 @@
     "babel-preset-es2017": "~6.24.1",
     "babel-preset-stage-0": "~6.24.1",
     "babel-preset-stage-3": "~6.24.1",
-    "moggy": "~0.1.1",
     "webpack": "~2.6.1"
   },
   "ava": {
