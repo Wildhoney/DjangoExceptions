@@ -4,6 +4,12 @@
 
 `npm i django-exceptions --save`
 
+![Travis](http://img.shields.io/travis/Wildhoney/DjangoExceptions.svg?style=flat-square)
+&nbsp;
+![npm](http://img.shields.io/npm/v/django-exceptions.svg?style=flat-square)
+&nbsp;
+![License MIT](http://img.shields.io/badge/license-mit-lightgrey.svg?style=flat-square)
+
 # Getting Started
 
 Django Exceptions will attempt to flatten the validation messages into a single hierarchy, as otherwise the validation messages are infinitely nested, which makes it troublesome to render to HTML. Thus you are guanrateed to have a single array of all validation messages, with a `field` and `messages` key &ndash; both of which themselves are arrays.
